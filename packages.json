@@ -1,16 +1,16 @@
 {
     "packages": {
-        "webservices/zendskeletonapplication": {
+        "neuweb/ZendSkeletonApplication": {
             "1.0.0": {
-                "name": "webservices/zendskeletonapplication",
+                "name": "neuweb/ZendSkeletonApplication",
                 "version": "1.0",
                 "source": {
-                    "url": ["https://git.nexgen.neustar.biz/webservices/zendskeletonapplication.git"],
+                    "url": ["git@github.com:neuweb/ZendSkeletonApplication.git"],
                     "type": "git",
                     "reference": "master"
                 },
                 "dist":{
-	        	"url": "https://git.nexgen.neustar.biz/webservices/zendskeletonapplication/repository/archive.zip?ref=master", 
+	        	"url": "https://github.com/neuweb/ZendSkeletonApplication/archive/master.zip", 
 	            "type": "zip" 
 	        	}
             }
