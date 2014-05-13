@@ -1,0 +1,23 @@
+{
+    "packages": {
+        "webservices/zendskeletonapplication": {
+            "1.0.0": {
+                "name": "webservices/zendskeletonapplication",
+                "version": "1.0",
+                "source": {
+                    "url": ["https://git.nexgen.neustar.biz/webservices/zendskeletonapplication.git"],
+                    "type": "git",
+                    "reference": "master"
+                },
+                "dist":{
+	        	"url": "https://git.nexgen.neustar.biz/webservices/zendskeletonapplication/repository/archive.zip?ref=master", 
+	            "type": "zip" 
+	        	}
+            }
+        }
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "2.2.*"
+    }
+}

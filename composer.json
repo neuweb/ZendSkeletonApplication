@@ -1,0 +1,20 @@
+{
+    "name": "webservices/zendskeletonapplication",
+    "version":"1.0.0",
+    "dist":{ 
+        "url": "https://git.nexgen.neustar.biz/webservices/zendskeletonapplication/repository/archive.zip?ref=master", 
+        "type": "zip"
+    },
+    "description": "Skeleton Application for ZF2 including bootstrap",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "framework",
+        "zf2",
+        "bootstrap"
+    ],
+    "homepage": "https://github.com/Nitecon/ZendSkeletonBootstrap",
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "2.2.*"
+    }
+}

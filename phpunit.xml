@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false" backupStaticAttributes="false" bootstrap="./test/Bootstrap.php" colors="false" syntaxCheck="true" strict="false" verbose="true" timeoutForSmallTests="5" stopOnFailure="false">
+    <testsuites>
+        <testsuite name="Application">
+            <directory>./test/module/Application</directory>
+        </testsuite>
+        <testsuite name="DBRest">
+            <directory>./test/module/DBRest</directory>
+        </testsuite>
+        <testsuite name="IAM">
+            <directory>./test/module/IAM</directory>
+        </testsuite>
+        <testsuite name="Registry">
+            <directory>./test/module/Registry</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory>./module</directory>
+            <exclude>
+                <directory suffix="autoload_classmap.php">./module</directory>
+                <directory suffix="autoload_function.php">./module</directory>
+                <directory suffix="autoload_register.php">./module</directory>
+                <directory suffix="module.config.php">./module</directory>
+                <directory suffix=".phtml">./module</directory>
+                <directory>./vendor</directory>
+                <directory>./config</directory>
+                <directory>./tests</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+	 <logging>
+        <log type="coverage-html" target="./build/coverage" title="ZF2 Skeleton" charset="UTF-8" yui="true" highlight="true" lowUpperBound="35" highLowerBound="70"/>
+        <log type="coverage-clover" target="./build/logs/clover.xml"/>
+        <log type="junit" target="./build/logs/junit.xml"
+      logIncompleteSkipped="false"/>
+    </logging>
+</phpunit>

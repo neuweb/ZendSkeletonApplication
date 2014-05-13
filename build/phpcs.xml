@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="Default-Wordpress">
+<description>Default wordpress Tests</description>
+
+<rule ref="Generic.PHP.DisallowShortOpenTag"/>
+<!-- ... -->
+</ruleset>
