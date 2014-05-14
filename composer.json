@@ -20,5 +20,5 @@
     "require-dev": {
         "squizlabs/php_codesniffer": "1.4.*",
         "satooshi/php-coveralls": "~0.6"
-    },
+    }
 }
