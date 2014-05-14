@@ -2,7 +2,7 @@
     "packages": {
         "neuweb/ZendSkeletonApplication": {
             "1.0.0": {
-                "name": "neuweb/ZendSkeletonApplication",
+                "name": "neuweb/zendskeletonapplication",
                 "version": "1.0",
                 "source": {
                     "url": ["git@github.com:neuweb/ZendSkeletonApplication.git"],
