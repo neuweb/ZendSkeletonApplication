@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/neuweb/ZendSkeletonApplication.svg?branch=master)](https://travis-ci.org/neuweb/ZendSkeletonApplication)
+[![Latest Stable Version](https://poser.pugx.org/neuweb/zendskeletonapplication/v/stable.png)](https://packagist.org/packages/neuweb/zendskeletonapplication) [![Total Downloads](https://poser.pugx.org/neuweb/zendskeletonapplication/downloads.png)](https://packagist.org/packages/neuweb/zendskeletonapplication) [![Latest Unstable Version](https://poser.pugx.org/neuweb/zendskeletonapplication/v/unstable.png)](https://packagist.org/packages/neuweb/zendskeletonapplication) [![License](https://poser.pugx.org/neuweb/zendskeletonapplication/license.png)](https://packagist.org/packages/neuweb/zendskeletonapplication)
+[![Coverage Status](https://coveralls.io/repos/neuweb/ZendSkeletonApplication/badge.png?branch=master)](https://coveralls.io/r/neuweb/ZendSkeletonApplication?branch=master)
+
 ZendSkeletonApplication
 =======================
 
