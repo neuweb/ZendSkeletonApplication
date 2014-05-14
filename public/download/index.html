@@ -1,0 +1,237 @@
+<!DOCTYPE html><html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ZF2 Skeleton Application</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Le styles -->
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAE2klEQVRoge2aTW8bVRSGz52MYyduYzexiVNSYtq0JHbbFBAICSk7pC66gAVIsGlFKyF2UdUNZdOmamEBC5C6QuK/8AvYoX7EJm3UpFGaryYh8dwvFpnxnHvnznjcOLUtdTbxeDHzvOe+7znXkyHwx0UJXXxY7QY46PFGQLuPrhdgtxvgVQ+bSLh++ulOVwrIJSncK1c23+nfy3SdgKnMNsyWKtu9lswwQbrLQl+OLu9dKy7aQpIjTBLgsksEJC0BNyfm1z4Z3BzkLnjXCBhJOfDL+ceruV5nyIPmkgATXSDgo2Mva7dLVWYRGGII2lsB1skCrowtrX9z4nmGS5L0wJkExT4dKaCvR8Dd8tzzswM7BQzrfwZgokMz8HZfTfxUnhPDKafAtLAySYALfA6dtQKfDm2ymxPzlk2ErYCLoBAspiMEfFtc5F+fWK6Dm8Kqr0JHWGjAZvDj5Lz4ILPV49sDIMo+ykq0cxKfSu/y2VJF5pPUDgJDwD46eFtX4LO31tiNM08IAQjAcwUQVHjR5hWwiITvTz7jXxxfsU1wUWENrgC83hXIJpi4U67yyaM7Ca+6XKtoPPA2TOLSwA6bLVV5xmZJ3R5xw6qDM0HAeR0WulR4wWfGF4gASIaGtUlwJgk4wgJ6mAISRMLM6af04vBqwrwlwL6HaHB0ToUFjiRAxb6IQxGQT1J2rzxXeze9m268JTCBglEIFRY4LjiVhyTg/ewWu1OqOqkekWbS2g9rSJfBrVEXotgGVdwR6iq0VMBXo8v0u5PPiJCkH1fzIF2GCRdeIngkoiUCkpbgP7w3vzed20jr+5i4YdUrzgWp24RqtqFuB6KyBRYaSdX4r+cfbw0nnSwGixtWHdz7TodXrWO1JsQfH3vJ7pYrNUJkNnpLYKo4BCru+92qV7geWrQKVBy8jcrLY0v/XRlbSnFJ0jq0MawRVjGFtV557Ttaz8IrWqivR7Cfz86tn8ts59WWGAyrcQMWYZ2osFLN+9TNSFMCRvtq/P6FBxtHbZ43hVXZoMUE98Jq6vE6MLYQFVZze6Hp3MburckqSICccTjVgbRdZgPrBDqNuwpRtqHCt1scAXxmfGHl8+MrBa8dhncZHRwiPR8WVjyo9M8eOJUEWKMuNJBg/LepRwvF/r0iHvGtD6u56rqFGLKbd51QAeNHdmv3LzxYS1iyWPc4+iERJ6z6VsET4sjGPR5by6s2lb4I77omAeJS4cXKjTNPMkKSERzGwFQNA9egjWHVKq50F2Qbpvteu6ciwCKS35r89+F0br1k9LohrFHgWGCg0xhtY666B79/LQvdD/2LKZtg9M8P/6kM9rJS4/273h4h0joUAZt7vF511C5dIbgV47ZtAwCcy2yv/j71qAYAE2FhNXeZxp6v20PrOPgcW8gP6n611eoH5459eWzp76vFxTKXxH/+LkJ+r8YE986NYcXA2tDyW6QvRL+f91e4AshfD/MyOFFjhjUEnEkV2MHAyPsUW0ULK9Oujdm86gtJ/AdLJt8zw6OPRmFV4EM6jhdo5XMgrF5gVQYuCQggINw3PIwCzGGFhuDYEmpYw6quguMBha3DtR0AfjtFFRDSZRqBc0l8UDSQTGHFVmkmrNz1vf5qjR33UXYzYVV7PK60Cu6FFQ8o3cpYgOn4H+QGDGkK7oaAAAAAAElFTkSuQmCC" rel="shortcut icon" type="image/x-icon">
+        <link href="https://dev-cdn.neuweb.biz/_global/css/bootstrap-ns/ns.css" media="screen" rel="stylesheet" type="text/css">
+        <!-- Scripts -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <!--[if lt IE 9]><script type="text/javascript" src="https://ns-cdn.neustar.biz/_global/js/html5shiv/html5shiv/3.6.2/html5shiv.js"></script><![endif]-->
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="navwrap">
+                <header class="h navbar navbar-inverse">
+                    <!--<section class="hat">
+                        <div class="container">
+                            <nav class="right row">
+                                <ul class="dropdown col-md-12">
+                                    <li class="call">Call <span class="dynamic_cs_tn"><strong>+1-555-555-5555</strong></span></li>
+                                    <li class="link"><a href="#nogo">Login</a></li>
+                                    <li class="link"><a href="http://hello.neustar.biz/main-request-info.html" target="_blank">Request Info</a></li>
+                                    <li class="link"><a href="/support">Support</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </section>-->
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="../" class="navbar-brand">Registry TLD</a>
+                        </div>
+                        <nav class="navbar-collapse bs-navbar-collapse in" role="navigation" style="height: auto;">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="/">Home</a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">Neustar Theme</a>
+                                </li>
+                                <li>
+                                    <a href="#">Lorem</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ipsum</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dolor <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-header">Examples</li>
+                                        <li><a href="#">Lorem Ipsum</a></li>
+                                        <li><a href="#">Dolor  &amp; Sit</a></li>
+                                        <li class="divider"></li>
+                                        <li class="dropdown-header">Lorem Ipsum</li>
+                                        <li><a href="#">Lorem Ipsum</a></li>
+                                        <li><a href="#">Lorem Ipsum</a></li>
+                                        <li><a href="#">Lorem Ipsum</a></li>
+                                        <li><a href="#">Lorem Ipsum</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="#">Login</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+            </div>
+            <div class="contentwrap">
+                <section class="breadcrumbs">
+                    <div class="container">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Library</a></li>
+                            <li class="active">Data</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section class="full intro">
+                    <div class="container">
+                        <div class="row">
+                            <h1 class="col-md-12">Neustar Layout</h1>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="full localnav">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <nav class="">
+                                    <ul>
+                                        <li class="active"><a href="#">Overview</a></li>
+                                        <li><a href="#">Our History</a></li>
+                                        <li><a href="#">Leadership</a></li>
+                                        <li><a href="#">Corporate Responsibility</a></li>
+                                        <li><a href="#">Neutrality</a></li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="full jumbotron">
+                    <div class="container">
+                        <div class="col-md-12 ">
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                        </div>
+
+                        <div class="clr">&nbsp;</div>
+                    </div>
+                </section>
+
+                <section class="full wrapper">
+                    <div class="container">
+                        <article class="col-md-12 main">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec fermentum tellus, sit amet tincidunt lorem. Morbi viverra hendrerit purus et lacinia. In vulputate massa sed aliquet vulputate. Integer rhoncus dolor tortor, nec adipiscing tellus feugiat at. Etiam id eros et nisi suscipit sollicitudin. Praesent mollis, magna sed ultricies pharetra, sem ligula dignissim odio, ultrices faucibus nulla augue placerat nulla. In malesuada interdum nulla. Mauris venenatis tortor ut nunc cursus porta. Nunc ut massa orci. Ut ullamcorper blandit libero, ut lacinia mauris tristique et. Integer dignissim aliquam velit, et congue arcu sollicitudin vitae. Maecenas fermentum, leo vitae iaculis scelerisque, diam eros cursus ipsum, at interdum nisi purus in turpis. Donec a auctor mi, quis facilisis elit. Proin aliquet ante a semper volutpat. Aenean eget erat ut metus vulputate pellentesque non sit amet ante. Donec vestibulum tincidunt elit sed suscipit.
+                            </p>
+
+                            <p>Pellentesque sed tempor nisi. Ut in ligula feugiat, pellentesque risus in, molestie ipsum. Proin non erat leo. Maecenas molestie imperdiet lacus in venenatis. Vestibulum aliquet velit non nibh tincidunt, at tempus purus porta. Suspendisse iaculis vitae dolor quis auctor. Curabitur hendrerit, libero ut imperdiet scelerisque, erat ligula congue quam, varius volutpat leo magna a magna. Pellentesque convallis fermentum tempus. <a href="#">Link</a></p>
+
+                            <p><a class="btn btn-default btn-lg" href="/it-security-services">Learn more</a></p>
+                            <p><a class="btn btn-default" href="/it-security-services">Learn</a></p>
+                            <p><a class="btn btn-default btn-sm" href="/it-security-services">Learn</a></p>
+                            <p><a class="btn btn-default btn-xs" href="/it-security-services">Learn</a></p>
+
+                            <p><a class="btn btn-primary btn-lg" href="/it-security-services">Learn more</a></p>
+                            <p><a class="btn btn-primary" href="/it-security-services">Learn</a></p>
+                            <p><a class="btn btn-primary btn-sm" href="/it-security-services">Learn</a></p>
+                            <p><a class="btn btn-primary btn-xs" href="/it-security-services">Learn</a></p>
+                            <p><a class="btn btn-primary btn-block" href="/it-security-services">Learn</a></p>
+
+                            <!-- Standard button -->
+                            <button type="button" class="btn btn-default">Default</button>
+
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                            <button type="button" class="btn btn-primary">Primary</button>
+
+                            <!-- Indicates a successful or positive action -->
+                            <button type="button" class="btn btn-success">Success</button>
+
+                            <!-- Contextual button for informational alert messages -->
+                            <button type="button" class="btn btn-info">Info</button>
+
+                            <!-- Indicates caution should be taken with this action -->
+                            <button type="button" class="btn btn-warning">Warning</button>
+
+                            <!-- Indicates a dangerous or potentially negative action -->
+                            <button type="button" class="btn btn-danger">Danger</button>
+
+                            <!-- Indicates a dangerous or potentially negative action -->
+                            <button type="button" class="btn btn-cancel">Cancel</button>
+
+                            <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+                            <button type="button" class="btn btn-link">Link</button>
+                        </article>
+                        <hr class="split">
+                        <div class="col-md-4">
+                            <h3>Lorem Ipsum</h3>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec fermentum tellus, sit amet tincidunt lorem. Morbi viverra hendrerit purus et lacinia. In vulputate massa sed aliquet vulputate. Integer rhoncus dolor tortor, nec adipiscing tellus feugiat at. Etiam id eros et nisi suscipit sollicitudin. Praesent mollis, magna sed ultricies pharetra, sem ligula dignissim odio, ultrices faucibus nulla augue placerat nulla.</p>
+
+                            <p><a class="btn btn-default" href="/marketing-services">Learn more</a></p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h3>Lorem Ipsum</h3>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec fermentum tellus, sit amet tincidunt lorem. Morbi viverra hendrerit purus et lacinia. In vulputate massa sed aliquet vulputate. Integer rhoncus dolor tortor, nec adipiscing tellus feugiat at. Etiam id eros et nisi suscipit sollicitudin. Praesent mollis, magna sed ultricies pharetra, sem ligula dignissim odio, ultrices faucibus nulla augue placerat nulla.</p>
+
+                            <p><a class="btn btn-default" href="/it-security-services">Learn more</a></p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h3>Lorem Ipsum</h3>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec fermentum tellus, sit amet tincidunt lorem. Morbi viverra hendrerit purus et lacinia. In vulputate massa sed aliquet vulputate. Integer rhoncus dolor tortor, nec adipiscing tellus feugiat at. Etiam id eros et nisi suscipit sollicitudin. Praesent mollis, magna sed ultricies pharetra, sem ligula dignissim odio, ultrices faucibus nulla augue placerat nulla.</p>
+
+                            <p><a class="btn btn-primary" href="/registry-other-services">Learn more</a></p>
+                        </div>
+                    </div>
+                </section>
+
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <footer class="f">
+            <section class="full lower">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 chat">
+                            <p>+1 (555) 555-5555 | <a class="feedback_trigger" href="#">Feedback</a></p>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="social">
+                                <li class="facebook"><a href="https://www.facebook.com/neustarinc" target="_blank">Like us on Facebook</a></li>
+                                <li class="twitter"><a href="http://twitter.com/#!/Neustar" target="_blank">Follow us on Twitter</a></li>
+                                <li class="linkedin"><a href="http://www.linkedin.com/company/neustar-inc" target="_blank">Follow us on LinkedIn</a></li>
+                                <li class="google"><a href="https://plus.google.com/105094231923518333940" target="_blank">Join us on Google+</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6 copy">
+                            <p>Copyright ©2014 Neustar, Inc. All Rights Reserved</p>
+                        </div>
+                        <div class="col-md-6 links">
+                            <ul>
+                                <li><a href="http://www.neustar.biz/privacy" target="_blank">Privacy</a></li>
+                                <li><a href="http://www.neustar.biz/legal" target="_blank">Legal</a></li>
+                                <li><a href="http://www.neustar.biz/support" target="_blank">Support</a></li>
+                                <li><a href="http://www.neustar.biz/about-us/neutrality" target="_blank">Neutrality</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="clearfix"></div>
+        </footer>
+    </body>
+</html>

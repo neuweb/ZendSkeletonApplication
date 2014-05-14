@@ -13,22 +13,25 @@ namespace Application\Controller;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
-class IndexController extends AbstractActionController {
+class IndexController extends AbstractActionController
+{
 
-    public function indexAction() {
+    public function indexAction()
+    {
         return new ViewModel();
     }
 
-    public function nsAction() {
+    public function nsAction()
+    {
         $this->layout('layout/ns-layout');
-        
+
         return new ViewModel();
     }
 
-    public function nsshortAction() {
+    public function nsshortAction()
+    {
         $this->layout('layout/ns-layout');
-        
+
         return new ViewModel();
     }
-
 }
