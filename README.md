@@ -27,7 +27,7 @@ Alternately, clone the repository and manually invoke `composer` using the shipp
 `composer.phar`:
 
     cd my/project/dir
-    git clone git@github.com:neuweb/ZendSkeletonApplication.git
+    git clone git://github.com/neuweb/ZendSkeletonApplication
     cd ZendSkeletonBootstrap
     php composer.phar self-update
     php composer.phar install
