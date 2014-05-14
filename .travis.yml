@@ -1,0 +1,18 @@
+language: php
+
+php:
+  - 5.3
+  - 5.4
+  - 5.5
+
+before_install:
+ - php composer.phar install --prefer-source --dev
+ - mkdir -p tests/config/autoload
+ - mkdir -p data/logs
+
+script:
+ - phpunit --coverage-clover ./build/logs/clover.xml
+ - php ./vendor/bin/phpcs --standard=PSR2 ./module/ ./test/
+
+after_script:
+  - php ./vendor/bin/coveralls -v
