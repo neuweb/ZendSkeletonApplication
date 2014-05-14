@@ -17,13 +17,13 @@ The recommended way to get a working copy of this project is to clone the reposi
 and use `composer` to install dependencies using the `create-project` command:
 
     curl -s https://getcomposer.org/installer | php --
-    php composer.phar create-project --stability=dev nitecon/skeleton-bootstrap /path/to/your/project
+    php composer.phar create-project neuweb/zendskeletonapplication /path/to/your/project
 
 Alternately, clone the repository and manually invoke `composer` using the shipped
 `composer.phar`:
 
     cd my/project/dir
-    git clone git@github.com:Nitecon/ZendSkeletonBootstrap.git
+    git clone git@github.com:neuweb/ZendSkeletonBootstrap.git
     cd ZendSkeletonBootstrap
     php composer.phar self-update
     php composer.phar install
@@ -35,7 +35,7 @@ Another alternative for downloading the project is to grab it via `curl`, and
 then pass it to `tar`:
 
     cd my/project/dir
-    curl -#L https://github.com/Nitecon/ZendSkeletonBootstrap/tarball/master | tar xz --strip-components=1
+    curl -#L https://github.com/neuweb/ZendSkeletonBootstrap/tarball/master | tar xz --strip-components=1
 
 You would then invoke `composer` to install dependencies per the previous
 example.
