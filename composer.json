@@ -1,5 +1,5 @@
 {
-    "name": "neuweb/ZendSkeletonApplication",
+    "name": "neuweb/zendskeletonapplication",
     "version":"1.0.0",
     "dist":{ 
         "url": "https://github.com/neuweb/ZendSkeletonApplication/archive/master.zip", 
