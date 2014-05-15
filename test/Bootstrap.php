@@ -1,6 +1,5 @@
 <?php
 
-define('REQUEST_MICROTIME', microtime(true));
 $basePath = dirname(__DIR__);
 defined('BASE_PATH') || define('BASE_PATH', $basePath);
 chdir($basePath);
