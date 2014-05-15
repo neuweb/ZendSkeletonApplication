@@ -1,8 +1,10 @@
 <div class="jumbotron">
     <h1>Welcome to Zend Framework 2</h1>
-    <p><?php echo sprintf($this->translate('You are currently running Zend Framework version %s. This skeleton can serve as a simple starting point for you to begin building your neustar theme application on ZF2.'), \Zend\Version\Version::VERSION) ?></p>
+    <p><?php echo sprintf($this->translate('You are currently running Zend Framework version %s using Bootstrap 3.0.0. This skeleton can serve as a simple starting point for you to begin building your neustar theme application on ZF2.'), \Zend\Version\Version::VERSION) ?></p>
     <p>See options below for help on getting started.</p>
-    <p><a class="btn btn-success btn-lg" href="https://github.com/neuweb/ZendSkeletonApplication" target="_blank"><?php echo $this->translate('Neustar Skeleton on GitHub') ?> &raquo;</a></p>
+    <a class="btn btn-success" href="https://github.com/neuweb/ZendSkeletonApplication" target="_blank"><?php echo $this->translate('Neustar Skeleton on GitHub') ?> &raquo;</a>
+    <a class="btn btn-success" href="http://framework.zend.com/manual/2.0/en/user-guide/overview.html" target="_blank"><?php echo $this->translate('Getting started with ZF2') ?> &raquo;</a>
+    <a class="btn btn-success" href="http://getbootstrap.com/getting-started/" target="_blank"><?php echo $this->translate('Getting started with Bootstrap') ?> &raquo;</a>
 </div>
 
 <div class="row">
@@ -49,6 +51,7 @@ curl -#L https://github.com/neuweb/ZendSkeletonApplication/tarball/master | tar 
             </div>
             <div class="panel-body">
                 <p>Click the link below to download the HTML so you can integrate into your application manually. The CSS is stored on our CDN and the favicon is embedded into the page.</p>
+                <p>The Neustar HTML and CSS is only tested to Bootstrap 3.0.0</p>
                 <p><a class="btn btn-success pull-right" href="/download/index.html" download="index.html"><?php echo $this->translate('Download') ?> &raquo;</a></p>
             </div>
         </div>

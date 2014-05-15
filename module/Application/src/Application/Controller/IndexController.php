@@ -27,11 +27,4 @@ class IndexController extends AbstractActionController
 
         return new ViewModel();
     }
-
-    public function nsshortAction()
-    {
-        $this->layout('layout/ns-layout');
-
-        return new ViewModel();
-    }
 }
