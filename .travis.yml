@@ -12,7 +12,7 @@ before_install:
 
 script:
  - phpunit --coverage-clover ./build/logs/clover.xml
- - php ./vendor/bin/phpcs --standard=PSR2 ./module/ ./test/
-
+ - php ./vendor/bin/phpcs --standard=PSR2 ./module/ 
+ 
 after_script:
   - php ./vendor/bin/coveralls -v
